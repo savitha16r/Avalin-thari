@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avalin Thari | Sarees with Love</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #fffaf5;
+  color: #49313a;
+}
+header {
+  background: #702d49;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+header h1 { margin: 0; font-size: 34px; }
+header p { margin-bottom: 0; letter-spacing: 3px; }
+nav {
+  background: #f2e2e6;
+  padding: 15px;
+  text-align: center;
+}
+nav a {
+  color: #702d49;
+  text-decoration: none;
+  margin: 12px;
+  font-family: Arial;
+}
+.hero {
+  text-align: center;
+  padding: 65px 20px;
+  background: #f7e9e9;
+}
+.hero h2 {
+  font-size: 40px;
+  color: #702d49;
+}
+.hero p { font-family: Arial; }
+button, .btn {
+  background: #702d49;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+section { padding: 40px 20px; text-align: center; }
+h2 { color: #702d49; }
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 22px;
+  max-width: 1000px;
+  margin: auto;
+}
+.product {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ead8dd;
+  border-radius: 8px;
+}
+.product img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  background: #f2e2e6;
+}
+.product h3 { color: #702d49; }
+.product p { font-family: Arial; }
+.payment {
+  background: #f7e9e9;
+  padding: 25px;
+  max-width: 550px;
+  margin: auto;
+  border-radius: 8px;
+}
+.upi { font-weight: bold; font-size: 20px; }
+footer {
+  background: #702d49;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  font-family: Arial;
+}
+@media(max-width:500px) {
+  nav a { display: inline-block; margin: 7px; }
+  .hero h2 { font-size: 30px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Avalin Thari</h1>
+  <p>WEAVES WITH LOVE</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#shop">Shop Sarees</a>
+  <a href="#payment">GPay</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+  <h2>Elegance in Every Drape</h2>
+  <p>Discover beautiful cotton sarees and traditional collections.</p>
+  <a class="btn" href="#shop">Explore Collection</a>
+</div>
+
+<section id="shop">
+  <h2>Our Saree Collection</h2>
+  <p>Find your favourite saree at Avalin Thari.</p>
+
+  <div class="products">
+
+    <div class="product">
+      <img src="https://placehold.co/400x500/f2e2e6/702d49?text=Cotton+Saree" alt="Cotton saree">
+      <h3>Cotton Sarees</h3>
+      <p>Message us for price and availability.</p>
+      <a class="btn" href="https://wa.me/918754579813?text=Hi%20Avalin%20Thari%2C%20I%20am%20interested%20in%20cotton%20sarees.">Order Now</a>
+    </div>
+
+    <div class="product">
+      <img src="https://placehold.co/400x500/f2e2e6/702d49?text=Sungudi+Saree" alt="Sungudi saree">
+      <h3>Madurai Sungudi</h3>
+      <p>Traditional prints and beautiful colours.</p>
+      <a class="btn" href="https://wa.me/918754579813?text=Hi%20Avalin%20Thari%2C%20I%20am%20interested%20in%20Sungudi%20sarees.">Order Now</a>
+    </div>
+
+    <div class="product">
+      <img src="https://placehold.co/400x500/f2e2e6/702d49?text=Chinnalapatti" alt="Chinnalapatti saree">
+      <h3>Chinnalapatti Sarees</h3>
+      <p>Lovely traditional cotton collections.</p>
+      <a class="btn" href="https://wa.me/918754579813?text=Hi%20Avalin%20Thari%2C%20I%20am%20interested%20in%20Chinnalapatti%20sarees.">Order Now</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="payment">
+  <h2>GPay Payment</h2>
+  <div class="payment">
+    <p>Pay the full confirmed saree price using GPay.</p>
+    <p class="upi">savitha.rr16@okaxis</p>
+    <button onclick="navigator.clipboard.writeText('savitha.rr16@okaxis').then(()=>alert('UPI ID copied'))">
+      Copy UPI ID
+    </button>
+    <p>Confirm the saree price and delivery charges with us before payment.</p>
+    <p>Share your payment screenshot on WhatsApp. Your order is confirmed only after payment verification.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Avalin Thari</h2>
+  <p>Have questions? We are happy to help!</p>
+  <a class="btn" href="https://wa.me/918754579813">Chat on WhatsApp</a>
+  <p>Instagram: @avalin_thari</p>
+</section>
+
+<footer>
+  <h2 style="color:white">Avalin Thari</h2>
+  <p>Thank you for shopping with us ❤️</p>
+  <p>WhatsApp: +91 87545 79813</p>
+</footer>
+
+</body>
+</html>
